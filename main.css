@@ -60,9 +60,15 @@ a.nav-link {
     flex-wrap: wrap;
     justify-content: center;
 }
+.top_product button{
+    text-transform: none;
+}
+.top_product button .fa{
+    padding-right: 8px;
+}
 .section {
     position: relative;
-    margin: 4px;
+    margin: 8px;
 }
 .section_desc {
     position: relative;
@@ -81,18 +87,6 @@ a.nav-link {
     top: 0px;
     color: white;
 }
-.section button{
-    font-family:'Grandstander', cursive;
-    background-color: darkgreen;
-    border-radius: 0;
-    padding: 8px;
-    box-shadow: none;
-}
-.section button::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: "\f217";
-}
     .top_product {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -103,7 +97,15 @@ a.nav-link {
     }
 
 /* PRODUCT */
-
-
-
+.main_overflow {
+    display: block;
+    height: 370px;
+    overflow: scroll;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.main_overflow .section{
+    margin: 8px 8px 32px 8px;
+}
 }
