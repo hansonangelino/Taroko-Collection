@@ -1,0 +1,94 @@
+/* SEPERATOR */
+body {
+    display: block;
+}
+div .alert{
+    background-color: red;
+}
+.mobilexxx{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+.mobilexxx {
+    display: block;
+}
+div.alert{
+    display: none;
+}
+
+.top_padding p{
+    line-height: 28.5px;
+    margin: 0;
+}
+/* TITLE SETTING */
+.title {
+    text-align: center;
+    -moz-text-align: center; /* For Firefox prior 58.0 */
+    font-size: 14px;
+    padding: 20px;
+}
+.title h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+.title p{
+    font-family:'Grandstander', cursive;
+    font-style: italic;
+    margin: 0;
+}
+/* TOP CHOICES */
+.topchc_gall {
+    display: block;
+    margin: 0px 16px 0px 16px;
+}
+.topchc_gall nav{
+    margin-top: 16px;
+}
+.top_product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section {
+    position: relative;
+    margin: 4px;
+}
+.section_desc {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+.section_desc p{
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    margin: 0;
+    bottom: 0;
+}
+.desc_text {
+    top: 0px;
+    color: white;
+}
+.section button{
+    background-color: darkgreen;
+    border-radius: 0;
+    padding: 8px;
+    box-shadow: none;
+}
+    .top_product {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .section img{
+        width: 100%;
+        max-height: auto;
+    }
+
+/* PRODUCT */
+
+
+
+}
