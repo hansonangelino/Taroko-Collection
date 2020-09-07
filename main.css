@@ -20,6 +20,16 @@ div.alert{
     line-height: 28.5px;
     margin: 0;
 }
+/* NAVBAR */
+.nav-item .fa{
+    padding-right: 8px;
+}
+h2 .btn{
+    padding-left: 0;
+}
+a.nav-link {
+    font-size: 18px;
+}
 /* TITLE SETTING */
 .title {
     text-align: center;
@@ -35,7 +45,6 @@ div.alert{
 }
 .title p{
     font-family:'Grandstander', cursive;
-    font-style: italic;
     margin: 0;
 }
 /* TOP CHOICES */
@@ -73,10 +82,16 @@ div.alert{
     color: white;
 }
 .section button{
+    font-family:'Grandstander', cursive;
     background-color: darkgreen;
     border-radius: 0;
     padding: 8px;
     box-shadow: none;
+}
+.section button::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f217";
 }
     .top_product {
         display: grid;
