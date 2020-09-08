@@ -25,7 +25,7 @@
         text-align: center;
         -moz-text-align: center; /* For Firefox prior 58.0 */
         font-size: 14px;
-        padding: 20px;
+        padding: 8px 20px 20px 20px;
     }
     .title h1{
         font-family: 'Dancing Script', cursive;
@@ -77,29 +77,41 @@
         top: 0px;
         color: white;
     }
-        .top_product {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-        .section img{
-            width: 100%;
-            max-height: auto;
-        }
-
-    /* PRODUCT */
-    .main_overflow {
-        display: block;
-        height: 370px;
-        overflow: scroll;
-        max-width: 100%;
-        text-align: center;
-        margin: 8px 16px 32px 8px;
-    }
-    .main_overflow .section{
-        margin: 4px;
-    }
-    .main_overflow .section_grid{
+    .top_product {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+    .section img{
+        width: 100%;
+        max-height: auto;
+    }
+
+    /* PRODUCT */
+    .product {
+        padding: 0px 16px 0px 16px;
+    }
+    .product_content {
+        display: flex;
+        flex-basis: 25%;
+    }
+    .side_link {
+        margin: 4px;
+    }
+    .product_content:nth-of-type(2) {
+        flex-basis: 75%;
+    }
+    .content_side {
+        background-color: red;
+    }
+    .content_main {
+        background-color: green;
+        width: 100%;
+    }
+    .content_main_flow {
+        display: block;
+        height: 272px;
+        overflow: scroll;
+        background-color: #fff;
+        margin: 4px;
     }
 }
