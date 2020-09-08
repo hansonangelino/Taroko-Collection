@@ -1,111 +1,105 @@
-/* SEPERATOR */
-body {
-    display: block;
-}
-div .alert{
-    background-color: red;
-}
-.mobilexxx{
-    display: none;
-}
 @media screen and (max-width: 768px) {
-.mobilexxx {
-    display: block;
-}
-div.alert{
-    display: none;
-}
-
-.top_padding p{
-    line-height: 28.5px;
-    margin: 0;
-}
-/* NAVBAR */
-.nav-item .fa{
-    padding-right: 8px;
-}
-h2 .btn{
-    padding-left: 0;
-}
-a.nav-link {
-    font-size: 18px;
-}
-/* TITLE SETTING */
-.title {
-    text-align: center;
-    -moz-text-align: center; /* For Firefox prior 58.0 */
-    font-size: 14px;
-    padding: 20px;
-}
-.title h1{
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
-}
-.title p{
-    font-family:'Grandstander', cursive;
-    margin: 0;
-}
-/* TOP CHOICES */
-.topchc_gall {
-    display: block;
-    margin: 0px 16px 0px 16px;
-}
-.topchc_gall nav{
-    margin-top: 16px;
-}
-.top_product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.top_product button{
-    text-transform: none;
-}
-.top_product button .fa{
-    padding-right: 8px;
-}
-.section {
-    position: relative;
-    margin: 8px;
-}
-.section_desc {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-.section_desc p{
-    position: absolute;
-    text-align: center;
-    color: white;
-    padding: 8px;
-    margin: 0;
-    bottom: 0;
-}
-.desc_text {
-    top: 0px;
-    color: white;
-}
+    .mobilexxx {
+        display: block;
+    }
+    div.alert{
+        display: none;
+    }
+    /* SEPERATOR */
+    .top_padding p{
+        line-height: 28.5px;
+        margin: 0;
+    }
+    /* NAVBAR */
+    .nav-item .fa{
+        padding-right: 8px;
+    }
+    h2 .btn{
+        padding-left: 0;
+    }
+    a.nav-link {
+        font-size: 18px;
+    }
+    /* TITLE SETTING */
+    .title {
+        text-align: center;
+        -moz-text-align: center; /* For Firefox prior 58.0 */
+        font-size: 14px;
+        padding: 20px;
+    }
+    .title h1{
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+        font-size: 36px;
+        margin: 0;
+    }
+    .title p{
+        font-family:'Grandstander', cursive;
+        margin: 0;
+    }
+    /* TOP CHOICES */
+    .topchc_gall {
+        display: block;
+        margin: 0px 16px 0px 16px;
+    }
+    .topchc_gall nav{
+        margin-top: 16px;
+    }
     .top_product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top_product button{
+        text-transform: none;
+    }
+    .top_product button .fa{
+        padding-right: 8px;
+    }
+    .section {
+        position: relative;
+        margin: 8px;
+    }
+    .section_desc {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    .section_desc p{
+        position: absolute;
+        text-align: center;
+        color: white;
+        padding: 8px;
+        margin: 0;
+        bottom: 0;
+    }
+    .desc_text {
+        top: 0px;
+        color: white;
+    }
+        .top_product {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .section img{
+            width: 100%;
+            max-height: auto;
+        }
+
+    /* PRODUCT */
+    .main_overflow {
+        display: block;
+        height: 370px;
+        overflow: scroll;
+        max-width: 100%;
+        text-align: center;
+        margin: 8px 16px 32px 8px;
+    }
+    .main_overflow .section{
+        margin: 4px;
+    }
+    .main_overflow .section_grid{
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .section img{
-        width: 100%;
-        max-height: auto;
-    }
-
-/* PRODUCT */
-.main_overflow {
-    display: block;
-    height: 370px;
-    overflow: scroll;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 32px;
-}
-.main_overflow .section{
-    margin: 8px 8px 32px 8px;
-}
 }
