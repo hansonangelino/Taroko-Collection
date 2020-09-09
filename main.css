@@ -26,16 +26,19 @@
         -moz-text-align: center; /* For Firefox prior 58.0 */
         font-size: 14px;
         padding: 8px 20px 20px 20px;
+        text-decoration: none;
     }
     .title h1{
         font-family: 'Dancing Script', cursive;
         font-weight: bold;
         font-size: 36px;
         margin: 0;
+        color: #4F4F4F;
     }
     .title p{
         font-family:'Grandstander', cursive;
         margin: 0;
+        color: #4F4F4F;
     }
     /* TOP CHOICES */
     .topchc_gall {
@@ -58,7 +61,7 @@
     }
     .section {
         position: relative;
-        margin: 8px;
+        margin: 0 8px 16px 8px;
     }
     .section_desc {
         position: relative;
@@ -96,22 +99,26 @@
     }
     .side_link {
         margin: 4px;
+        margin-top: 0px;
     }
     .product_content:nth-of-type(2) {
         flex-basis: 75%;
     }
     .content_side {
-        background-color: red;
+        /* background-color: red; */
     }
     .content_main {
-        background-color: green;
-        width: 100%;
-    }
-    .content_main_flow {
+        /* background-color: green; */
         display: block;
         height: 272px;
         overflow: scroll;
-        background-color: #fff;
-        margin: 4px;
+        width: 100%;
     }
+    .content_main_flow {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .content_main_flow .section{
+        margin: 0 0 8px 8px;
+    }   
 }
