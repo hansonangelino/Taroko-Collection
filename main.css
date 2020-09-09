@@ -1,4 +1,8 @@
 @media screen and (max-width: 768px) {
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+    }
     .mobilexxx {
         display: block;
     }
@@ -90,35 +94,62 @@
     }
 
     /* PRODUCT */
-    .product {
-        padding: 0px 16px 0px 16px;
-    }
     .product_content {
         display: flex;
         flex-basis: 25%;
     }
     .side_link {
-        margin: 4px;
-        margin-top: 0px;
+        margin: 0px 4px 4px 0px;
+    }
+    .side_link img{
+        border-radius: 0 8px 8px 0;
     }
     .product_content:nth-of-type(2) {
         flex-basis: 75%;
     }
-    .content_side {
-        /* background-color: red; */
-    }
     .content_main {
         /* background-color: green; */
         display: block;
-        height: 272px;
+        height: 520px;
         overflow: scroll;
         width: 100%;
+        margin: 0px 16px 16px 0px;
     }
     .content_main_flow {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .content_main_flow .section{
-        margin: 0 0 8px 8px;
-    }   
+
+    /* IKLAN */
+    .ads {
+        background-color: red;
+        margin-right: 4px;
+    }
+
+    /* ARTICLE */
+    .article_section {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0 16px 16px 16px;
+    }
+    .article_section img{
+        border-radius: 16px;
+        width: 100%;
+    }
+    .article_desc {
+        text-align: justify;
+        margin-top: 8px;
+    }
+    .desc_author {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    /* WHY CHOOSE US? */
+    .benefit {
+        display: block;
+    }
 }
