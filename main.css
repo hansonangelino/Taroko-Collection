@@ -6,6 +6,9 @@
     h6 {
         margin: 0;
     }
+    h2 {
+        margin: 0;
+    }
     .mobilexxx {
         display: block;
     }
@@ -47,6 +50,22 @@
         margin: 0;
         color: #4F4F4F;
     }
+
+    /* CAROUSEL MAIN */
+    .carousel_item {
+        position: relative;
+    }
+    .car_cta {
+        position: absolute;
+        bottom: 56px;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        color: white;
+        font-family:'Grandstander', cursive;
+        /* background-color: lightseagreen; */
+    }
+
     /* TOP CHOICES */
     .topchc_gall {
         display: block;
@@ -97,18 +116,9 @@
     }
 
     /* PRODUCT */
-    .product_content {
-        display: flex;
-        flex-basis: 25%;
-    }
-    .side_link {
-        margin: 0px 4px 4px 0px;
-    }
-    .side_link img{
-        border-radius: 0 8px 8px 0;
-    }
-    .product_content:nth-of-type(2) {
-        flex-basis: 75%;
+    .category_link {
+        width: 100%;
+        overflow-x: scroll;
     }
     .content_main {
         /* background-color: green; */
@@ -116,7 +126,7 @@
         height: 520px;
         overflow: scroll;
         width: 100%;
-        margin: 0px 16px 16px 0px;
+        padding: 16px;
     }
     .content_main_flow {
         display: grid;
@@ -130,6 +140,11 @@
     }
 
     /* ARTICLE */
+    .article {
+        -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+    }
     .article_section {
         width: 100%;
         display: block;
