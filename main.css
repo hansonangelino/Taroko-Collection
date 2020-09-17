@@ -140,11 +140,6 @@
     }
 
     /* ARTICLE */
-    .article {
-        -webkit-box-shadow: 0px 20px 35px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 20px 35px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 20px 35px 0px rgba(0,0,0,0.1);
-    }
     .article_section {
         width: 100%;
         display: block;
@@ -167,13 +162,15 @@
     }
 
     /* WHY CHOOSE US? */
-    .benefit {
+    .choose_us {
+    }
+    .choose_us img{
+        width: 20%;
+        padding-right: 8px;
+    }
+    .choose_section {
         display: flex;
-    }
-    .benefit_icon {
-        flex: 10%;
-    }
-    .benefit_text {
-        flex: 90%;
+        padding: 8px 0 8px 0;
+        font-family: 'Grandstander', cursive;;
     }
 }

@@ -1,0 +1,23 @@
+<svg id="Component_70_1" data-name="Component 70 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.895" height="22.446" viewBox="0 0 22.895 22.446">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ff6969;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="22.895" height="22.446"/>
+    </clipPath>
+  </defs>
+  <g id="rate" class="cls-2">
+    <path id="rate-2" data-name="rate" class="cls-3" d="M0,22V11A11,11,0,1,1,11,22ZM1.289,11v9.711H11A9.711,9.711,0,1,0,1.289,11ZM11,16.111,6.486,17.833l.243-4.825L3.7,9.247,8.361,7.988,11,3.941l2.639,4.047L18.3,9.247l-3.033,3.761.244,4.825Zm3.127-.186-.169-3.342,2.1-2.606L12.829,9.1,11,6.3,9.171,9.1,5.94,9.977l2.1,2.606-.169,3.342L11,14.732Z" transform="translate(-0.122 0.394)"/>
+  </g>
+</svg>
