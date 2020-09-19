@@ -28,7 +28,7 @@
     <!-- MAIN NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-2 fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
         <img
           src="logo.png"
           height="30"
@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item" style="margin-top: 16px;">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
             </li>
             <li class="nav-item">
               <div class="accordion" id="accordionExample">
@@ -79,21 +79,21 @@
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
-                  <a class="nav-link" href="#">Terusan</a>
-                  <a class="nav-link" href="#">Setelan</a>
-                  <a class="nav-link" href="#">Daster</a>
+                  <a class="nav-link" href="#product">Terusan</a>
+                  <a class="nav-link" href="#product">Setelan</a>
+                  <a class="nav-link" href="#product">Daster</a>
                 </div>
 
               </div>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i></i>Article</a>
+              <a class="nav-link" href="#article"><i class="fa fa-book" aria-hidden="true"></i></i>Article</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
+              <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a>
+              <a class="nav-link" href="#aboutus"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a>
             </li>
           </ul>
         </div>
@@ -248,7 +248,7 @@
     
     <hr>
     <!-- PRODUCT -->
-    <div class="product">
+    <div class="product" id="product">
       <div class="title">
         <a href=""></a>
           <h1>Product</h1>
@@ -486,12 +486,10 @@
     
     <hr>
     <!-- ARTICLE -->
-    <div class="article">
+    <div class="article" id="article">
       <div class="title" style="padding-top: 20px;">
-        <a href="">
-          <h1>Article</h1>
-          <p>Helpful & practical guide about fashion world</p>
-        </a>
+        <h1>Article</h1>
+        <p>Helpful & practical guide about fashion world</p>
       </div>
       <div class="article_section">
         <img src="img\article\thumb1.png" alt="" style="margin-top: 12px;">
@@ -531,7 +529,8 @@
     </div>
 
     <!-- ABOUT US -->
-    <div class="about_us" style="margin-top: 24px;">
+    <div class="about_us" id="aboutus" style="margin-top: 24px;">
+      <hr style="margin-top: 2px; margin-bottom: 2px;">
       <div class="about_section">
         <a
         class="btn btn-primary"
@@ -546,9 +545,7 @@
         color: #4F4F4F;
         background-color: white;
         padding: 16px;
-        -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+        box-shadow: none;
         "
         >
         WHY CHOOSE US? <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
@@ -603,6 +600,7 @@
           </div>
         </div>
       </div>
+      <hr style="margin-top: 2px; margin-bottom: 2px;">
       <div class="about_section">
         <a
         class="btn btn-primary"
@@ -617,9 +615,7 @@
         color: #4F4F4F;
         background-color: white;
         padding: 16px;
-        -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+        box-shadow: none;
         "
         >
         OUR CONTACT <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
@@ -631,6 +627,7 @@
         sapiente ea proident.
         </div>
       </div>
+      <hr style="margin-top: 2px; margin-bottom: 2px;"> 
       <div class="about_section">
         <a
         class="btn btn-primary"
@@ -645,9 +642,7 @@
         color: #4F4F4F;
         background-color: white;
         padding: 16px;
-        -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+        box-shadow: none;
         "
         >
         DELIVERY OPTION <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
