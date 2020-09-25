@@ -1,19 +1,679 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Taroko Collection</title>
+    <link rel="icon" href="icon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Api --> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="main.css"> 
+    
+    <!-- Custom styles -->
 
-function myFunction() {
-document.getElementById("demos").innerHTML = "AHAY!!!";
-</script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-2 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img
+          src="logo.png"
+          height="30"
+          alt=""
+          loading="lazy"
+        />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="padding-right: 0px;"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-top: 16px;">
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="accordion" id="accordionExample">
+                <div id="headingOne">
+                  <h2 style="margin: 0;">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                      style="padding: 0; font-size: 16px;"
+                    >
+                    <a class="nav-link" href="#" style="text-transform: none;">
+                      <i class="fa fa-list-ol" aria-hidden="true"></i>Product
+                    </a>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="collapse pl-4"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <a class="nav-link" href="#product">Terusan</a>
+                  <a class="nav-link" href="#product">Setelan</a>
+                  <a class="nav-link" href="#product">Daster</a>
+                </div>
 
-<h2>JavaScript in Head</h2>
+              </div>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#article"><i class="fa fa-book" aria-hidden="true"></i></i>Article</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus"><i class="fa fa-users" aria-hidden="true"></i>About us</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<p id="demos">A Paka</p>
+    <!-- SEPERATOR -->
+    <div class="top_padding">
+      <p>.<br>.</p>
+    </div>
+    <!-- MAIN CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/topchoice/topchoice4.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="car_cta">
+            <h2>Long denim dress</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/topchoice/topchoice5.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="car_cta">
+            <h2>Long denim dress</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/topchoice/topchoice6.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="car_cta">
+            <h2>Long denim dress</h2>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-<button type="button" onclick="myFunction()">Press me</button>
+    <!-- TOP CHOICE_PART -->    
+    <div class="topchc">
+      <div class="title" style="padding-top: 20px;">
+        <a href="">
+          <h1>Top Choices</h1>
+          <p>Carefully chosen from our top rated product</p>
+        </a>
+      </div>
+      <div class="topchc_gall">
+        <div class="topchc_content">
+          <div class="top_product">
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <a href="404.html" target="_blank">
+                  <img src="img/topchoice/topchoice1.png" alt="">
+                </a>
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <img src="img/topchoice/topchoice2.png" alt="">
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <img src="img/topchoice/topchoice3.png" alt="">
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <img src="img/topchoice/topchoice4.png" alt="">
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <img src="img/topchoice/topchoice5.png" alt="">
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <div class="section">
+              <div class="bg-image hover-zoom">
+                <img src="img/topchoice/topchoice6.png" alt="">
+              </div>
+              <div class="section_desc">
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation" style="margin: 0;">
+            <ul class="pagination justify-content-center" style="margin: 0;">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
 
-</body>
-</html> 
+    <!-- PRODUCT -->
+    <div class="product" id="product">
+      <div class="title">
+        <a href=""></a>
+          <h1>Product</h1>
+          <p>Newest and trendy collection just for "You"</p>
+        </a>
+      </div>
+      
+      <div class="product_content">
+        <!-- Tabs navs -->
+        <div class="category_link">
+          <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex2-tab-1"
+                data-toggle="tab"
+                href="#ex2-tabs-1"
+                role="tab"
+                aria-controls="ex2-tabs-1"
+                aria-selected="true"
+                >TERUSAN</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex2-tab-2"
+                data-toggle="tab"
+                href="#ex2-tabs-2"
+                role="tab"
+                aria-controls="ex2-tabs-2"
+                aria-selected="false"
+                >SETELAN</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex2-tab-3"
+                data-toggle="tab"
+                href="#ex2-tabs-3"
+                role="tab"
+                aria-controls="ex2-tabs-3"
+                aria-selected="false"
+                >DASTER</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex2-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex2-tabs-1"
+            role="tabpanel"
+            aria-labelledby="ex2-tab-1"
+          >
+            <div class="content_main">
+            <div class="content_main_flow">
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ex2-tabs-2"
+            role="tabpanel"
+            aria-labelledby="ex2-tab-2"
+          >
+          <div class="content_main">
+            <div class="content_main_flow">
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ex2-tabs-3"
+            role="tabpanel"
+            aria-labelledby="ex2-tab-3"
+          >
+          <div class="content_main">
+            <div class="content_main_flow">
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="section">
+                <div class="bg-image hover-zoom">
+                  <img src="img/topchoice/topchoice2.png" alt="">
+                </div>
+                <div class="section_desc">
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="seemore" style="text-align: center; padding: 16px 0 16px 0;">
+          <a href="product.html" style="color: orange;">See more...</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ARTICLE -->
+    <div class="article" id="article">
+      <div class="title" style="padding-top: 20px;">
+        <h1>Article</h1>
+        <p>Helpful & practical guide about fashion world</p>
+      </div>
+      <div class="article_section">
+        <img src="img\article\thumb1.png" alt="" style="margin-top: 12px;">
+        <div class="article_desc">
+          <p>Discover 2020’s latest kids clothing trends from fashion's top designer and see how your favorite celebrities are wearing and..... <a href="404.html" target="_blank">Read more</a> </p>
+          <div class="desc_author" style="font-size: 14px;">
+            <div class="author_left" style="text-align: start;">
+              <p><i class="fa fa-coffee" aria-hidden="true"></i> 3-5 Minutes</p>
+              <p>By: Hanson Angelino</p>
+            </div>
+            <div class="author_right">
+              <button type="button" class="btn btn-outline-success" data-ripple-color="dark" style="border-radius: 10px; height: 100%; float: right">
+                Read more  <i class="fa fa-share" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article_section">
+        <img src="img\article\thumb2.png" alt="" style="margin-top: 12px;">
+        <div class="article_desc">
+          <p>Discover 2020’s latest kids clothing trends from fashion's top designer and see how your favorite celebrities are wearing and..... <a href="404.html" target="_blank">Read more</a> </p>
+          <div class="desc_author" style="font-size: 14px;">
+            <div class="author_left" style="text-align: start;">
+              <p><i class="fa fa-coffee" aria-hidden="true"></i> 3-5 Minutes</p>
+              <p>By: Hanson Angelino</p>
+            </div>
+            <div class="author_right">
+              <button type="button" class="btn btn-outline-success" data-ripple-color="dark" style="border-radius: 10px; height: 100%; float: right">
+                Read more  <i class="fa fa-share" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="about_us" id="aboutus" style="margin-top: 24px;">
+      <hr style="margin-top: 2px; margin-bottom: 2px;">
+      <div class="about_section">
+        <a
+        class="btn btn-primary"
+        data-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+        style="
+        width: 100%;
+        text-align: left;
+        color: #4F4F4F;
+        background-color: white;
+        padding: 16px;
+        box-shadow: none;
+        "
+        >
+        WHY CHOOSE US? <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </a>
+    
+        <div class="collapse mt-3" id="collapseExample" style="padding: 8px 16px 16px 16px;">
+          <div class="title">
+            <h1>Why choose us?</h1>
+          </div>
+          <div class="choose_us">
+            <!-- <img src="img\icon\Group 278.png" alt=""> -->
+            <div class="choose_section">
+              <img src="img\icon\safe.svg" alt="">
+              <div class="choose_desc">
+                <h6 style="margin: 2px;">Quality guarantee</h6>
+                <p style="font-size: 14px;">We always make sure that our product have an 
+                  International standard</p>
+              </div>
+            </div>
+            <div class="choose_section">
+              <img src="img\icon\finished.svg" alt="">
+              <div class="choose_desc">
+                <h6 style="margin: 2px;">Quality guarantee</h6>
+                <p style="font-size: 14px;">We always make sure that our product have an 
+                  International standard</p>
+              </div>
+            </div>
+            <div class="choose_section">
+              <img src="img\icon\star.svg" alt="">
+              <div class="choose_desc">
+                <h6 style="margin: 2px;">Quality guarantee</h6>
+                <p style="font-size: 14px;">We always make sure that our product have an 
+                  International standard</p>
+              </div>
+            </div>
+            <div class="choose_section">
+              <img src="img\icon\payment.svg" alt="">
+              <div class="choose_desc">
+                <h6 style="margin: 2px;">Quality guarantee</h6>
+                <p style="font-size: 14px;">We always make sure that our product have an 
+                  International standard</p>
+              </div>
+            </div>
+            <div class="choose_section">
+              <img src="img\icon\pending shipments.svg" alt="">
+              <div class="choose_desc">
+                <h6 style="margin: 2px;">Quality guarantee</h6>
+                <p style="font-size: 14px;">We always make sure that our product have an 
+                  International standard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top: 2px; margin-bottom: 2px;">
+      <div class="about_section">
+        <a
+        class="btn btn-primary"
+        data-toggle="collapse"
+        href="#collapseExample1"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample1"
+        style="
+        width: 100%;
+        text-align: left;
+        color: #4F4F4F;
+        background-color: white;
+        padding: 16px;
+        box-shadow: none;
+        "
+        >
+        OUR CONTACT <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </a>
+    
+        <div class="collapse mt-3" id="collapseExample1" style="padding: 8px 16px 16px 16px;">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident.
+        </div>
+      </div>
+      <hr style="margin-top: 2px; margin-bottom: 2px;"> 
+      <div class="about_section">
+        <a
+        class="btn btn-primary"
+        data-toggle="collapse"
+        href="#collapseExample2"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample1"
+        style="
+        width: 100%;
+        text-align: left;
+        color: #4F4F4F;
+        background-color: white;
+        padding: 16px;
+        box-shadow: none;
+        "
+        >
+        DELIVERY OPTION <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        </a>
+    
+        <div class="collapse mt-3" id="collapseExample2" style="padding: 8px 16px 16px 16px;">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident.
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" style="background-color: darkslategray; color: white; text-align: center; padding: 16px;">
+      <h4 style="letter-spacing: 2px;">FOLLOW US</h4>
+      <div class="social_media" style="margin-bottom: 24px; font-size: 30px; letter-spacing: 8px;">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-facebook-messenger"></i>
+      </div>
+      <div class="credit" style="font-size: 11px; text-align: center; opacity: 50%;">
+        <p>DESIGN BY HANSON ANGELINO <br> COPYRIGHT 2020 - ©TAROKO COLLECTION </p>
+      </div>
+    </div>
+
+  </body>
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+  
+  </script>
+</html>
