@@ -1,0 +1,58 @@
+.detail_all {
+    margin: 16px;
+}
+.detail_name p{
+    font-family: 'Playfair Display', serif;
+}
+.detail_name {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.detail_desc {
+    text-align: justify;
+}
+.detail_tag {
+    margin-top: 4px;
+}
+.detail_tag p{
+    display: inline-block;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 8px;
+    padding: 4px 16px;
+    margin: 0px 4px;
+}
+.detail_tag p:first-child{
+    margin-left: 0;
+}
+.buy_cta {
+    margin-top: 60px;
+}
+.buy_cta button{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: rgb(37, 37, 37);
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    color: WHITE;
+    font-weight: bold;
+}
+.recommend {
+    
+}
+.recommend_pic {
+    overflow-x: scroll;
+    display: flex;
+}
+.overflow_pic {
+    
+}
