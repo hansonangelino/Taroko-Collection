@@ -1,4 +1,10 @@
+body {
+    display: none;
+}
 @media screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
     p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
