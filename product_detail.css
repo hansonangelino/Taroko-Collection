@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
 .detail_all {
     margin: 16px;
 }
@@ -27,32 +30,41 @@
     margin-left: 0;
 }
 .buy_cta {
-    margin-top: 60px;
+    margin-top: 64px;
 }
 .buy_cta button{
     background-color: #4CAF50;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     color: rgb(37, 37, 37);
     padding: 12px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 0;
     cursor: pointer;
     width: 100%;
     font-size: 20px;
     color: WHITE;
-    font-weight: bold;
 }
 .recommend {
-    
+    margin: 8px 16px;
+    margin-top: 32px;
 }
 .recommend_pic {
-    overflow-x: scroll;
-    display: flex;
+
 }
 .overflow_pic {
-    
+    display: flex;
+    overflow-x: scroll;
+}
+.pic_recommend {
+    margin: 8px;
+}
+.pic_recommend:first-child{
+    margin-left: 0;
+}
+.pic_recommend:last-child{
+    margin-right: 0;
 }
