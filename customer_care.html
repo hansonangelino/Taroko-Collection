@@ -19,8 +19,9 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/customer_care.css">
+    
     <!-- Custom styles -->
 
   </head>
@@ -52,11 +53,11 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item" style="margin-top: 16px;">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i>Login</a>
-            </li> 
+              <a class="nav-link" href="login.html"><i class="fa fa-users" aria-hidden="true"></i>Login</a>
+            </li>
             <li class="nav-item">
               <div class="accordion" id="accordionExample">
                 <div id="headingOne">
@@ -82,18 +83,18 @@
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
-                  <a class="nav-link" href="#">Terusan</a>
-                  <a class="nav-link" href="#">Setelan</a>
-                  <a class="nav-link" href="#">Daster</a>
+                  <a class="nav-link" href="#product">Terusan</a>
+                  <a class="nav-link" href="#product">Setelan</a>
+                  <a class="nav-link" href="#product">Daster</a>
                 </div>
 
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#article"><i class="fa fa-book" aria-hidden="true"></i></i>Article</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i></i>Article</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a>
+              <a class="nav-link" href="#aboutus"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a>
             </li>
           </ul>
         </div>
@@ -104,65 +105,61 @@
     <div class="top_padding">
       <p>.<br>.</p>
     </div>
-    <div class="anjay">
-      <div class="login-wrap">
-        <div class="login-html">
-          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-          <div class="login-form" style="margin-top: 16px;">
-            <div class="sign-in-htm">
-              <div class="group">
-                <label for="user" class="label">Username</label>
-                <input id="user" type="text" class="input">
-              </div>
-              <div class="group">
-                <label for="pass" class="label">Password</label>
-                <input id="pass" type="password" class="input" data-type="password">
-              </div>
-              <div class="group">
-                <input id="check" type="checkbox" class="check" checked>
-                <label for="check"><span class="icon"></span> Keep me Signed in</label>
-              </div>
-              <div class="group">
-                <input type="submit" class="button" value="Sign In">
-              </div>
-              <div class="hr"></div>
-              <div class="foot-lnk">
-                <a href="#forgot">Forgot Password?</a>
-              </div>
-            </div>
-            <div class="sign-up-htm">
-              <div class="group">
-                <label for="user" class="label">Username</label>
-                <input id="user" type="text" class="input">
-              </div>
-              <div class="group">
-                <label for="pass" class="label">Password</label>
-                <input id="pass" type="password" class="input" data-type="password">
-              </div>
-              <div class="group">
-                <label for="pass" class="label">Repeat Password</label>
-                <input id="pass" type="password" class="input" data-type="password">
-              </div>
-              <div class="group">
-                <label for="pass" class="label">Email Address</label>
-                <input id="pass" type="text" class="input">
-              </div>
-              <div class="group">
-                <input type="submit" class="button" value="Sign Up">
-              </div>
-              <div class="hr"></div>
-              <div class="foot-lnk" style="display: block;">
-                <label for="tab-1">Already Member?</a>
-              </div>
-            </div>
-          </div>
+
+    <!-- FORM CONTACT -->
+    <div class="customer_form">
+        <form
+        action="https://formspree.io/f/mrgobdqg"
+        method="POST"
+        >
+        <label id="name">
+            Name <br>
+            <input type="text" name="message" placeholder="________________________________________________" required>
+        </label>
+        <label id="email">
+            Email address <br>
+            <input type="text" name="_replyto" placeholder="________________________________________________" required>
+        </label>
+        <label id="message">
+            Your message <br>
+            <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+        <div class="send_mail">
+            <button type="submit">Send</button>
         </div>
-    </div>
+        </form>
+
+        <!-- <script>
+        //  Bind the event handler to the "submit" JavaScript event
+        $('form').submit(function () {
+
+        // Get the Login Name value and trim it
+        var fname = $.trim($('#fname').val());
+        var lname = $.trim($('#lname').val());
+        var phon =$.trim($('#phon').val());
+
+        // Check if empty of not
+        if (fname === '') {
+            alert('First name is empty.');
+            return false;
+        }
+        else if (lname === '') {
+            alert('Last Name is empty.');
+            return false;
+        }
+        else if (phon === '') {
+            alert('Phone is empty.');
+            return false;
+        }
+        });
+        </script> -->
     </div>
 
     <!-- ABOUT US -->
-    <div class="about_us" id="aboutus">
+    <div class="about_us" id="aboutus" style="">
+      <hr style="margin-top: 2px; margin-bottom: 2px;">
       <div class="about_section">
         <a
         class="btn btn-primary"
@@ -253,7 +250,7 @@
         OUR CONTACT <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
         </a>
     
-        <div class="collapse mt-3" id="collapseExample1" style="padding: 8px 16px 16px 16px;">
+        <div class="collapse mt-3" id="collapseExample1" style="padding: 8px 16px 16px 16px; text-align: justify;">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
         squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
         sapiente ea proident.
@@ -263,11 +260,7 @@
       <div class="about_section">
         <a
         class="btn btn-primary"
-        data-toggle="collapse"
-        href="#collapseExample2"
-        role="button"
-        aria-expanded="false"
-        aria-controls="collapseExample1"
+        href="customer_care.html"
         style="
         width: 100%;
         text-align: left;
@@ -277,14 +270,8 @@
         box-shadow: none;
         "
         >
-        DELIVERY OPTION <div class="arrow_trigger" style="float: right;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        CUSTOMER CARE <div style="float: right;"><i class="fa fa-arrow-right"></i></div>
         </a>
-    
-        <div class="collapse mt-3" id="collapseExample2" style="padding: 8px 16px 16px 16px;">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-        sapiente ea proident.
-        </div>
       </div>
     </div>
 
