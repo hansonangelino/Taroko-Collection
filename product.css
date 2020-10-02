@@ -1,0 +1,33 @@
+.our_product {
+    margin: 8px 16px 32px 16px;
+}
+.thumb_content {
+    text-align: center;
+    padding: 40px 0 24px 0;
+    font-size: 12px;
+    color: white;
+}
+.thumb_title {
+    margin-bottom: 16px;
+}
+.thumb_title h1{
+    font-family: 'Inika', serif;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.thumb {
+    box-shadow: rgba(0, 0, 0, .65) 0 0 0 1000000px inset;
+    border-radius: 20px;
+    background-image: url(020.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+}
+.thumb_item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
