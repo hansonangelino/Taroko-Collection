@@ -131,9 +131,16 @@
 
       <!-- your other form fields go here -->
       <div class="send_mail">
-          <button type="submit">Send</button>
+          <p id="email_sent"></p>
+          <button type="submit" id="sendmail">Send</button>
       </div>
       </form>
+
+      <script>
+        document.getElementById('sendmail').onclick = function() {
+          document.getElementById('sendmail').innerHTML = "Email sent!";
+        }
+      </script>
 
     </div>
 
