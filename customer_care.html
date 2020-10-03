@@ -108,53 +108,33 @@
 
     <!-- FORM CONTACT -->
     <div class="customer_form">
-        <form
-        action="https://formspree.io/f/mrgobdqg"
-        method="POST"
-        >
-        <label id="name">
-            Name <br>
-            <input type="text" name="message" placeholder="________________________________________________" required>
-        </label>
-        <label id="email">
-            Email address <br>
-            <input type="text" name="_replyto" placeholder="________________________________________________" required>
-        </label>
-        <label id="message">
-            Your message <br>
-            <textarea name="message" rows="6" required></textarea>
-        </label>
+      <div class="title">
+          <h1 style="color: white;">Customer care</h1>
+          <p style="color: white;">We always care about your opinion</p>
+      </div>
+      <form
+      action="https://formspree.io/f/mrgobdqg"
+      method="POST"
+      >
+      <label id="name">
+          Name <br>
+          <input type="text" name="message" placeholder="________________________________________________________________________________________________" required>
+      </label>
+      <label id="email">
+          Email address <br>
+          <input type="text" name="_replyto" placeholder="________________________________________________________________________________________________" required>
+      </label>
+      <label id="message">
+          Your message <br>
+          <textarea name="message" rows="6" required></textarea>
+      </label>
 
-        <!-- your other form fields go here -->
-        <div class="send_mail">
-            <button type="submit">Send</button>
-        </div>
-        </form>
+      <!-- your other form fields go here -->
+      <div class="send_mail">
+          <button type="submit">Send</button>
+      </div>
+      </form>
 
-        <!-- <script>
-        //  Bind the event handler to the "submit" JavaScript event
-        $('form').submit(function () {
-
-        // Get the Login Name value and trim it
-        var fname = $.trim($('#fname').val());
-        var lname = $.trim($('#lname').val());
-        var phon =$.trim($('#phon').val());
-
-        // Check if empty of not
-        if (fname === '') {
-            alert('First name is empty.');
-            return false;
-        }
-        else if (lname === '') {
-            alert('Last Name is empty.');
-            return false;
-        }
-        else if (phon === '') {
-            alert('Phone is empty.');
-            return false;
-        }
-        });
-        </script> -->
     </div>
 
     <!-- ABOUT US -->
