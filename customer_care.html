@@ -118,28 +118,41 @@
       >
       <label id="name">
           Name <br>
-          <input type="text" name="message" placeholder="________________________________________________________________________________________________" required>
+          <input type="text" name="message" id="content" 
+          placeholder="________________________________________________________________________________________________" required>
       </label>
       <label id="email">
           Email address <br>
-          <input type="text" name="_replyto" placeholder="________________________________________________________________________________________________" required>
+          <input type="text" name="_replyto" id="content"
+          placeholder="________________________________________________________________________________________________" required>
       </label>
       <label id="message">
           Your message <br>
-          <textarea name="message" rows="6" required></textarea>
+          <textarea name="message" rows="6" required id="content"></textarea>
       </label>
 
       <!-- your other form fields go here -->
       <div class="send_mail">
           <p id="email_sent"></p>
-          <button type="submit" id="sendmail">Send</button>
+          <button type="submit" id="sendmail" onclick="verifier()">Send</button>
       </div>
       </form>
 
       <script>
-        document.getElementById('sendmail').onclick = function() {
-          document.getElementById('sendmail').innerHTML = "Email sent!";
+        function verifier() {
+          var empty = document.getElementById('content');
+          if (empty.value === "") {
+              document.getElementById('sendmail').innerHTML = "Failed to send!";
+              document.getElementById('sendmail').style.cssText = 'color: white; background-color: rgb(150, 22, 22); border: none;';
+            }
+           else {
+              document.getElementById('sendmail').innerHTML = "Email sent!";
+              document.getElementById('sendmail').style.cssText = 'color: white; background-color: rgb(0, 165, 8); border: none;';
+            }
         }
+        // document.getElementById('sendmail').onclick = function() {
+        //   document.getElementById('sendmail').innerHTML = "Email sent!";
+        // }
       </script>
 
     </div>
