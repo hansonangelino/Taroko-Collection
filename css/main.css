@@ -27,6 +27,9 @@ body {
         margin: 0;
     }
     /* NAVBAR */
+    a.nav-link:hover {
+        font-weight: bold;
+    }
     .nav-item .fa{
         padding-right: 8px;
     }
@@ -95,6 +98,9 @@ body {
         position: relative;
         margin: 0 8px 16px 8px;
     }
+    .section:last-of-type, .content_main_flow > .section:nth-last-of-type(2){
+        margin: 0 8px 0px 8px;
+    }
     .section_desc {
         position: relative;
         width: 100%;
@@ -138,7 +144,17 @@ body {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-
+    .seemore {
+        text-align: center;
+    }
+    .seemore a{
+        display: inline-block;
+        margin: 24px 0 32px 0;
+        padding: 16px 32px;
+        font-size: 16px;
+        border-radius: 12px;
+        border: 2px solid orange;
+    }
     /* IKLAN */
     .ads {
         background-color: red;
