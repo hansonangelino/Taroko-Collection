@@ -98,7 +98,7 @@ body {
         position: relative;
         margin: 0 8px 16px 8px;
     }
-    .section:last-of-type, .content_main_flow > .section:nth-last-of-type(2){
+    .section:last-of-type, .section:nth-last-of-type(2){
         margin: 0 8px 0px 8px;
     }
     .section_desc {
@@ -149,8 +149,8 @@ body {
     }
     .seemore a{
         display: inline-block;
-        margin: 24px 0 32px 0;
-        padding: 16px 32px;
+        margin: 24px 0;
+        padding: 12px 28px;
         font-size: 16px;
         border-radius: 12px;
         border: 2px solid orange;
