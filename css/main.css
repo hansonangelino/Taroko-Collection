@@ -1,13 +1,23 @@
 body {
-    display: none;
+    margin: 0;
+}
+.jumbotron{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 @media screen and (max-width: 768px) {
-    body {
+    .jumbotron{
         display: block;
     }
-    p {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
+    .main_event{
+        display: none;
+    }
+    body {
+        display: block;
     }
     h6 {
         margin: 0;
