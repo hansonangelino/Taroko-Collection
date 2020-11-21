@@ -201,4 +201,28 @@ p {
         padding: 8px 0 8px 0;
         font-family: 'Grandstander', cursive;;
     }
+    .footer-item {
+        margin-bottom: 5%;
+    }
+    .footer-item-product {
+        display: flex;
+        margin-top: 2%;
+        font-size: 4.5vw;
+    }
+    .footer-item-product li{
+        margin: 4px;
+    }
+    .footer-item-product li:hover {
+        background-color: #fff;
+        color: teal;
+    }
+    .item-left {
+        flex: 1;
+    }
+    .item-right {
+        flex: 1;
+    }
+    .footer-item-product li{
+        list-style-type: none;
+    }
 }
